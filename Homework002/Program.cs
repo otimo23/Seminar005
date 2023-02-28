@@ -16,7 +16,7 @@ int [] RanMas (int size, int minValue, int MaxValue)
     }
     return res;
 }
-/*int SumEvPos(int[]array)
+int SumEvPos(int[]array)
 {
     int sum = 0;
     for(int i = 1; i < array.Length; i= i+2)
@@ -24,16 +24,5 @@ int [] RanMas (int size, int minValue, int MaxValue)
         sum = sum + array[i];
     }
     return sum;
-}*/
-int SumEvPos(int[]array) // foreach обращается только к значению индекса?
-{
-    int sum = 0;
-    
-    foreach (int item in array)
-{
-    int i = 1;
-    sum+= i/2 ==0! ? item: 0;
-    
 }
-return sum;
-}
+
